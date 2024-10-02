@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family:'Times New Roman';
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .register-container {
+            background: rgba(0, 0, 0, 0.55);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            width: 400px;
+            text-align: center;
+        }
+
+        input {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            width: 90%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        img {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: white;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        a {
+            color: rgba(230, 42, 255, 0.85);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="register-container">
+        <img src="register.png" alt="Register">
+        <form id="registerForm" action="register.php" method="post">
+            <input type="text" name="username" placeholder="Username"><br>
+            <input type="email" name="email" placeholder="E-mail"><br>
+            <input type="password" name="password" placeholder="Password"><br>
+            <input type="submit" value="Register">
+        </form>
+        <p>Already registered? <a href="login.html">Login</a></p>
+        <p>Want to return to the website? <a href="index.php">Return to website</a></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
